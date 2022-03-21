@@ -1,11 +1,9 @@
 package com.muwaffaq.innopolis.solid.LSP_IS.wrong;
 
 
-public class Penguin implements Bird {
+public class Penguin implements Bird, Waterfown {
     /// ❌ ❌ ❌ ❌ violate Liskov Principle
     /// Penguin can't Fly
-    @Override
-    public void fly() {System.out.println("I can't Fly"); }
 
     @Override
     public void eat() {

@@ -2,9 +2,20 @@ package com.muwaffaq.innopolis.solid.LSP_IS.wrong;
 //❌❌❌
 // how many SOLID Does it Violates ?
 // Fix it.
- interface Bird {
-    void fly();
+
+interface Animal{
     void eat();
-    void hatch();
+}
+
+interface Waterfown extends Animal{
     void swim();
+}
+
+interface Flying extends Animal{
+    void fly();
+
+}
+
+ interface Bird extends Animal  {
+    void hatch();
 }
